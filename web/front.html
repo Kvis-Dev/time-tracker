@@ -11,6 +11,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6 ">
+            <button class="btn btn-primary" ng-click="clear()">Clear timer</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 ">
             Total time
         </div>
 
@@ -18,8 +24,6 @@
             {{(allTime*1000) | date:'HH:mm:ss': 'UTC'}}
         </div>
     </div>
-
-
     <br/>
 
     <div ng-if="selected.length" class="row">

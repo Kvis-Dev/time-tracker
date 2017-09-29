@@ -15,6 +15,10 @@ phonecatApp.controller('ctrl', function ($scope) {
         }
     };
 
+    $scope.clear = function(){
+        BackEnd.clear_timer();
+    }
+
     window.setInterval(function () {
         var nfo = BackEnd.get_info();
 

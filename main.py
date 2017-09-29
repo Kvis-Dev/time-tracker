@@ -1,8 +1,7 @@
 import htmlPy,  os
 from back_end import BackEnd
 
-app = htmlPy.AppGUI(
-    title=u"KV app time tracker", developer_mode=True)
+app = htmlPy.AppGUI(title=u"KV app time tracker", developer_mode=True)
 app.maximized = True
 app.bind(BackEnd(app))
 app.width = 800

@@ -33,7 +33,7 @@ screen.force_update()  # recommended per Wnck documentation
 # loop all windows
 for window in screen.get_windows():
     if window.is_active() == True:
-        print (window.get_geometry())
+        # print (window.get_geometry())
         window_name = window.get_name()
         print (window.get_application().get_icon_name())
         print (dir(window.get_application()))
