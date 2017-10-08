@@ -1,7 +1,7 @@
 var phonecatApp = angular.module('app', []);
 
 // Define the `PhoneListController` controller on the `phonecatApp` module
-phonecatApp.controller('ctrl', function ($scope) {
+phonecatApp.controller('ctrl', function ($scope, $timeout) {
     $scope.list = {};
 
     $scope.selected = [];
@@ -19,6 +19,7 @@ phonecatApp.controller('ctrl', function ($scope) {
         BackEnd.clear_timer();
     }
 
+    // window.setTimeout(function () {
     window.setInterval(function () {
         var nfo = BackEnd.get_info();
 
